@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+
+<div style="margin-bottom: 10px;"><button>Start Animation</button></div>
+
+<div id="box" style="background:red;height:100px;width:100px;position:absolute;">My Ad</div>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+   	 var divBox = $("div#box");
+   	 divBox.animate({height: '300px', width: '300px'},"slow");
+	 divBox.animate({fontSize:"5em"},"slow");
+	 divBox.animate({fontSize:"1em"},"slow");
+   	 divBox.animate({height: '100px', width: '100px'},"slow");
+    });
+});
+</script>
+
+</body>
+</html>
